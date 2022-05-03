@@ -12,7 +12,7 @@ Full task brief can be found detailed [here](test-brief.md)
 
 ## Setup
 ---
-
+1. Be authenticated and authorised with Google CLI once installed - details how 
 Run the first-run bash script with the following command
 
 ```

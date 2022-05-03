@@ -6,10 +6,11 @@ locals {
     "pod-ip-range"      = "10.0.0.0/14",
     "services-ip-range" = "10.4.0.0/19"
   }
-  gke_num_nodes = 3
+  gke_num_nodes = 1
 }
 
-var billing_account{
-  description = "The cloud billing account id associated with your google cloud account"
+variable "billing_account" {
+    type = string
+    description = "The cloud billing account id associated with your google cloud account"
 }
 
