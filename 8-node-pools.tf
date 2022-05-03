@@ -7,7 +7,7 @@ resource "google_container_node_pool" "scalable_node_pool" {
 
   autoscaling {
     min_node_count = 0
-    max_node_count = 10
+    max_node_count = 3
   }
 
   node_config {
