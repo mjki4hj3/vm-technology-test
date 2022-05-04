@@ -2,6 +2,10 @@
 resource "google_service_account" "vm_sa" {
   account_id   = "vm-service-account-id"
   display_name = "VM tech test service account"
+
+  depends_on = [
+    google_project_service.compute
+  ]
 }
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster
